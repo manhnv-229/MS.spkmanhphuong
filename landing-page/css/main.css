@@ -1,0 +1,255 @@
+    @import url(./components/benefit.css);
+    @import url(./components/banner-top.css);
+    @import url(./components/appointment.css);
+    @import url(./components/form-input.css);
+    @import url(./components/section.css);
+    @font-face {
+        font-family: Josefin Sans;
+        src: url(../assets/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf);
+    }
+    
+    @font-face {
+        font-family: Josefin Sans Bold;
+        src: url(../assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf);
+    }
+    /* ================================================
+   Global Styles
+   ================================================ */
+    
+    body,
+    html {
+        overflow-x: hidden;
+    }
+    
+    body {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.7;
+        color: #898989;
+        margin: 0;
+    }
+    
+    a,
+    input[type=submit] {
+        -webkit-transition: all 0.25s ease-out;
+        -moz-transition: all 0.25s ease-out;
+        -ms-transition: all 0.25s ease-out;
+        -o-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+    }
+    
+    a:hover,
+    a:focus,
+    a:visited,
+    a:active {
+        text-decoration: none;
+    }
+    /* 
+   Typography
+   ---------- */
+    
+    strong,
+    b {
+        font-weight: 700;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 700;
+        line-height: 1.3;
+        color: #333;
+    }
+    
+    h5,
+    h6 {
+        font-weight: 400;
+    }
+    
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    
+    h3 {
+        font-size: 35px;
+    }
+    
+    h4 {
+        font-size: 30px;
+    }
+    
+    h5 {
+        font-size: 25px;
+    }
+    
+    h6 {
+        font-size: 20px;
+    }
+    
+    @media (max-width: 767px) {
+        h3 {
+            font-size: 26px;
+        }
+    }
+    
+    p,
+    .lead {
+        line-height: 1.7;
+    }
+    
+    .main {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    
+    .container {
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    @media (min-width: 768px) {
+        .container {
+            width: 750px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .container {
+            width: 970px;
+        }
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 0;
+            padding-left: 0;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;
+        }
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        box-shadow: 0 1px 1px 0 rgb(0 0 0 / 3%);
+        border-color: #e7e7e7;
+        border-width: 0 0 1px;
+        background-color: #fff;
+    }
+    
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .site-logo {
+        background-image: url(/assets/logo-2.png);
+        width: 200px;
+        flex-shrink: 100px;
+        height: 80px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0 center;
+    }
+    
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ff4444;
+        font-size: 25px;
+        margin-right: 15px;
+        border: 4px solid #ff4444;
+        border-radius: 50%;
+        padding: 8px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .content {}
+    
+    .content__wrapper {}
+    
+    .content__headline {}
+    
+    .content__headline-sub h3 {
+        color: #898989;
+    }
+    
+    .content__banner-img {}
+    
+    .content__banner-img img {
+        height: auto;
+        max-width: 100%;
+        vertical-align: top;
+    }
+    
+    .footer {}
+    
+    .m-row {
+        display: flex;
+    }
+    
+    .m-col {
+        width: 50%;
+        padding: 0 10px;
+    }
+    
+    .text-highlight {
+        color: #ff4444;
+    }
+    
+    hr {
+        height: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        text-align: left;
+        margin-left: 0;
+        max-width: 55px;
+        border-top: 4px solid #ff4444;
+        box-sizing: content-box;
+    }
+    
+    .checklist i {
+        color: #ff4444;
+        font-weight: 700;
+    }

@@ -1,0 +1,97 @@
+/* 
+   Form Inputs
+   ----------- */
+
+.form-control {
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: #DDDDDD;
+    height: 45px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.has-error .form-control:focus {
+    border-color: #E23B1A;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.has-error .checkbox {
+    color: #5c5c5c;
+}
+
+label {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+a,
+input[type=submit] {
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    -ms-transition: all 0.25s ease-out;
+    -o-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #C3C3C3;
+}
+
+.input-lg {
+    height: 50px;
+}
+
+.input-group-lg>.form-control,
+.input-group-lg>.input-group-addon,
+.input-group-lg>.input-group-btn>.btn {
+    border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+    .checkbox-inline,
+    .radio-inline {
+        display: block;
+    }
+    .checkbox-inline+.checkbox-inline,
+    .radio-inline+.radio-inline {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,64 @@
+section {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+}
+
+section#services {
+    background-color: #fafafa;
+}
+
+section#services .service-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#services .service-item {
+    border: 1px solid #fafafa;
+    background-color: #fff;
+}
+
+section#services .service-item img {
+    width: 100%;
+}
+
+section#services .service-item~.service-item {
+    margin-left: 20px;
+}
+
+section#services .service-list .service-item__title h6 {
+    text-align: center;
+    margin: 10px 0;
+    white-space: nowrap;
+    font-size: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    color: #333;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section#services .service-list .service-item__text {
+    padding: 0 20px;
+}
+
+section#customer-comments .comment-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+section#customer-comments .comment-item .comment-customer__text {
+    font-style: italic;
+}
+
+section#customer-comments .comment-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+section#customer-comments .comment-item img~div,
+section#customer-comments .comment-item div~img {
+    margin-left: 20px;
+}

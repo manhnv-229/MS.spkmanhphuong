@@ -1,0 +1,5 @@
+section#banner--top {
+    background-image: url(../../assets/medical-bg.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}

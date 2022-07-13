@@ -1,0 +1,129 @@
+/* ================================================
+   Join Now
+   ================================================ */
+
+.checklist {
+    margin-bottom: 30px;
+    font-size: 17px;
+    margin-top: 30px;
+    padding: 0;
+}
+
+@media (min-width: 992px) {
+    .checklist li {
+        width: 49%;
+        display: inline-block;
+        line-height: 37px;
+    }
+    .checklist-full li {
+        width: 100%;
+        display: inline-block;
+    }
+    .checklist-right li {
+        text-align: right;
+    }
+    .checklist-right li i {
+        float: right;
+        margin-right: 0;
+        margin-left: 10px;
+        padding-top: 6px;
+    }
+}
+
+.checklist i {
+    margin-right: 10px;
+}
+
+.appointment-form {
+    background: #FAFAFA;
+    border: 2px solid #eeeeee;
+}
+
+.form-spacing {
+    margin: 40px 30px 35px;
+}
+
+.appointment-form .form-group {
+    padding: 0px 25px;
+}
+
+.appointment-form .form-header {
+    border: solid 1px;
+    margin: -1px;
+    padding: 20px 10px 35px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.appointment-form .form-header a {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.appointment-form .form-header a:hover,
+.appointment-form .form-header a:focus,
+.appointment-form .form-header a:active {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.appointment-form .form-header {
+    background-color: #ff4444;
+    text-align: center;
+    border: 1px solid #a9a9a900;
+}
+
+.appointment-form .form-header h4,
+.appointment-form .form-header a {
+    color: #FFF;
+}
+
+.form-header .or_icon {
+    color: #a9a9a9;
+    background: #EFEFEF;
+    width: 50px;
+    height: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -25px;
+}
+
+.form-footer {
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
+}
+
+.form-footer input[type='submit'] {
+    background-color: #ff4444;
+    color: #fff;
+    border: 4px solid #ff4444;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 20px;
+    height: unset;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-footer input[type='submit']:hover {
+    color: #000;
+    border: 4px solid #ff4444;
+    background-color: #fff;
+}
+
+input[type='submit'] {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.text-muted {
+    margin-top: 15px;
+    line-height: 30px;
+}
