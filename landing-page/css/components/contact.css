@@ -1,0 +1,21 @@
+section#contact {}
+
+section#contact .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-item {
+    max-width: 350px;
+}
+
+.contact-item__title {
+    font-size: 20px;
+    color: #ff4444;
+}
+
+.contact-item ul {
+    list-style: none;
+    margin: unset;
+    padding-inline-start: 10px;
+}

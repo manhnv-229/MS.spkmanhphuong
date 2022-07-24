@@ -3,27 +3,36 @@ section {
     padding-bottom: 50px !important;
 }
 
-section#services {
+section#services hr,
+section#customer-comments hr,
+section#first-appointment hr {
+    margin-left: auto;
+}
+
+section#services,
+section#first-appointment {
     background-color: #fafafa;
 }
 
 section#services .service-list {
+    position: relative;
     display: flex;
-    align-items: center;
+    text-align: center;
+    align-items: stretch;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 section#services .service-item {
+    float: left;
     border: 1px solid #fafafa;
     background-color: #fff;
+    max-width: 555px;
+    margin: 10px;
 }
 
 section#services .service-item img {
     width: 100%;
-}
-
-section#services .service-item~.service-item {
-    margin-left: 20px;
 }
 
 section#services .service-list .service-item__title h6 {
@@ -41,6 +50,16 @@ section#services .service-list .service-item__title h6 {
 
 section#services .service-list .service-item__text {
     padding: 0 20px;
+    text-align: left;
+}
+
+.text-item {
+    display: flex;
+}
+
+.text-item .text-item__icon {
+    margin-right: 20px;
+    color: #ff4444;
 }
 
 section#customer-comments .comment-item {
@@ -50,6 +69,22 @@ section#customer-comments .comment-item {
 
 section#customer-comments .comment-item .comment-customer__text {
     font-style: italic;
+}
+
+.comment-customer__text--left {
+    background: url(/assets/img/quote2.png) no-repeat 99% center;
+    padding-right: 200px;
+    text-align: left;
+}
+
+.comment-customer__text--right {
+    background: url(/assets/img/quote1.png) no-repeat 1% center;
+    padding-left: 200px;
+    text-align: right;
+}
+
+.comment-customer__name {
+    font-style: normal;
 }
 
 section#customer-comments .comment-item img {

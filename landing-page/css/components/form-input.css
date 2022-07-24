@@ -2,6 +2,10 @@
    Form Inputs
    ----------- */
 
+.form-group~.form-group {
+    margin-top: 10px;
+}
+
 .form-control {
     border-radius: 0;
     -webkit-box-shadow: none;
@@ -46,7 +50,6 @@
 
 label {
     font-weight: 400;
-    font-size: 18px;
 }
 
 input,
