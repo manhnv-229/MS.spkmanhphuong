@@ -27,15 +27,21 @@ class customerRepository {
     public function getCustomer()
     {
         # code...
-        $sql = "SELECT * FROM customer";
+        // $sql = "SELECT * FROM customer";
+        $store_get = "CALL proc_get_customers";
+
         // Thực thi lệnh lấy dữ liệu:
-        $this->result = $this->dbConnect->query($sql);
+        $this->result = $this->dbConnect->query($store_get);
+        // $this->result = $this->dbConnect->mysqli_multi_query ($store_get);
         if($this->result->num_rows > 0){
             // output data of each row
             $resultSet = array();
             while($row = $this->result->fetch_assoc()) {
                 $resultSet[] = $row;
+                // echo json_encode($row);
             }
+
+            echo json_encode(array_values($resultSet));
             $this->dbReference->sendResponse(200,'{"items":'.json_encode($resultSet).'}');
         }else{
             //echo "0 results";

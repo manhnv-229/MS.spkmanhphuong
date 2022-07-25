@@ -18,6 +18,9 @@ class customer{
     // Họ và tên
     public $fullname;
 
+    // Ngày sinh
+    public $date_of_birth;
+
     // Email
     public $email;
 
@@ -28,13 +31,16 @@ class customer{
     public $service_name;
 
     // Ngày khám
-    public $date;
+    public $time_appointment;
 
     // Thời gian khám
     public $time;
 
     // Thông tin bổ sung
     public $description;
+
+    // Tình trạng:
+    public $status;
 }
 
 function gen_uuid() {

@@ -13,7 +13,7 @@ class systemConfig {
      * Kết nối tới database
      */
     function connectDB(){
-        $this->dbConnect = new mysqli('localhost', 'root', 'mysql', 'ms.spkmanhphuong');
+        $this->dbConnect = new mysqli('8.214.100.177', 'dev', '12345678', 'MS.spkManhPhuong');
         if($this->dbConnect->connect_errno){
             return null; 
         }else{
@@ -23,6 +23,7 @@ class systemConfig {
     
     function sendResponse($status = 200, $body = '', $content_type = 'application/json;charset=UTF-8') //$content_type = 'text/html'
     {
+        // $content_type = 'text/html';
         $status_header = 'HTTP/1.1 '. $status .' '.$this->getStatusCodeMeeage($status);
         header($status_header);
         header('Content-type: '. $content_type);
